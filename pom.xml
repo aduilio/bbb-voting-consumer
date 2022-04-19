@@ -11,11 +11,10 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	
-	<groupId>com.aduilio.votacaobbb</groupId>
-	<artifactId>microservice</artifactId>
+	<groupId>com.aduilio.bbbvoting</groupId>
+	<artifactId>consumer</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>bbb-1</name>
-	<description>Votacao BBB</description>
+	<name>BBB Voting Consumer</name>
 	
 	<properties>
 		<java.version>11</java.version>

@@ -17,6 +17,11 @@ public class RegisterVoteService {
 
 	private final VoteRepository repository;
 
+	/**
+	 * Receives the messages from the Kafka topic 'voting' to save.
+	 *
+	 * @param register
+	 */
 	@KafkaListener(topics = "voting", groupId = "VotingMicroservice")
 	private void execute(ConsumerRecord<String, String> register) {
 		Vote vote = Vote.builder()
